@@ -9,56 +9,50 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## 🎓 Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- **Master in Random Mathematics**, Université Paris Saclay — *2020–2021*
+- **Major in Mathematics and Data Sciences**, CentraleSupélec — *2017–2021*
+- **Bachelor in Fundamental Physics**, Université Paris Sud — *2017–2018*
+- **Preparatory Classes MPSI/MP\***, CPGE Chateaubriand Rennes — *2015–2017*
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+---
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## 📚 PhD Thesis
 
-Publications
+**Title:** Distributed control of flexible loads on the power grid  
+**Advisor:** Ana Bušić  
+
+This thesis consists in providing new flexibility resources which are particularly crucial to integrate renewable energies into the power grid. The procedure relies on new smart technologies allowing for automatic control of devices. The objective is to control a great amount of devices to provide services to the system (load shaping or ancillary services) while: - maintaining the quality of service for the users; - minimizing communications between controllable devices and the central controller. The approach combines the techniques from the theory of **controlled Markov processes**, **mean-field theory**, **optimal transport** and **automatic control**.
+
+---
+
+## 👨‍🏫 Teaching Experience
+
+  <ul>{% for post in site.teaching reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+---
+
+## 📝 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+---
+## 💬 Talks
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
+---
+
+## 🤝 Community Involvement
+
+- **Scouting:** BAFA & BAFD training (animation, leadership, logistics, finance)
+- **Secours Populaire Français:** food distribution, children’s activities, fundraising
+
+---
