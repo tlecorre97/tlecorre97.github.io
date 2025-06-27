@@ -1,0 +1,25 @@
+name: Update Google Scholar Publications
+
+on:
+  schedule:
+    - cron: '0 0 * * 1'  # chaque lundi
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - run: pip install scholarly
+      - run: python fetch_scholar.py
+      - name: Commit and push
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add publications.json
+          git commit -m "Update Google Scholar publications" || echo "No changes"
+          git push
