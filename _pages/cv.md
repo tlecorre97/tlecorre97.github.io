@@ -8,7 +8,9 @@ redirect_from:
 ---
 
 {% include base_path %}
-
+<p>
+  <a href="{{ '/files/cv.pdf' | relative_url }}" download>Download CV (PDF)</a>
+</p>
 ## 🎓 Education
 
 - **Master in Mathematics of Randomness (Statistics and Machine Learning)**, Université Paris Saclay — *2020–2021*
