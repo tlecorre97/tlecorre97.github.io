@@ -11,7 +11,7 @@ redirect_from:
 
 ## 🎓 Education
 
-- **Master in Random Mathematics**, Université Paris Saclay — *2020–2021*
+- **Master in Mathematics of Randomness (Statistics and Machine Learning)**, Université Paris Saclay — *2020–2021*
 - **Major in Mathematics and Data Sciences**, CentraleSupélec — *2017–2021*
 - **Bachelor in Fundamental Physics**, Université Paris Sud — *2017–2018*
 - **Preparatory Classes MPSI/MP\***, CPGE Chateaubriand Rennes — *2015–2017*
