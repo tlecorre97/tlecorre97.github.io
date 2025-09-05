@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-
+{% if page.permalink == "/cv/" %}
+<p>
+  <a href="{{ '/files/cv.pdf' | relative_url }}" download>Download CV (PDF)</a>
+</p>
+{% endif %}
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% endif %}
