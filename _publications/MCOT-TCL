@@ -1,13 +1,13 @@
 ---
-title: "A decentralized algorithm for a mean field control problem of piecewise deterministic Markov processes"
-category: journal
+title: "Moment Constrained Optimal Transport for Thermostatically Controlled Loads"
+category: preprint
 authors:
-  - Adrien Séguret
   - Thomas Le Corre
-  - Nadia Oudjane
-date: 2024-01-12
-venue: "ESAIM: Probability and Statistics, Vol. 28, pp. 22–45"
-paperurl: "https://www.esaim-ps.org/articles/ps/pdf/2024/01/ps230042.pdf"
+  - Julien Cardinal
+  - Ana Bušić
+date: 2025-08-27
+venue: "Arxiv"
+paperurl: "https://arxiv.org/abs/2508.20059"
 excerpt: >
-  This article proposes a decentralized algorithm to solve a mean field control problem for piecewise deterministic Markov processes (PDMPs), with application to the smart charging of large EV fleets. The authors prove convergence of a stochastic Uzawa algorithm in a non-convex setting with unbounded control intensities.
+  This work addresses the distributed control of large populations of thermostatically controlled loads (TCLs), such as water heaters, balancing global constraints like grid stability with individual physical and service limitations. We propose a framework based on Moment Constrained Optimal Transport (MCOT), which formulates the control problem as an optimal transport problem with moment constraints. This allows incorporating global consumption limits and physical feasibility directly into the control design. The high-dimensional problem is reduced to a tractable finite-dimensional formulation, and gradients are computed via Monte Carlo simulations of TCL trajectories. Unlike previous approaches, our framework allows selecting the sampling law, significantly speeding up computations and avoiding extensive state-space discretization. Numerical experiments show that the method effectively coordinates TCLs under various constraints, and we demonstrate its applicability in an online setting using simulated data from the SMACH platform.
 ---
