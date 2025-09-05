@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 <p>
-  <a href="{{ '/files/cv.pdf' | relative_url }}" download>Download CV (PDF)</a>
+  <a href="{{ '/files/cv.pdf' | relative_url }}" download>Download CV in French (PDF)</a>
 </p>
 ## 🎓 Education
 
