@@ -11,7 +11,7 @@ Hello! Welcome to my website! I am a PhD student in Computer Sciences, under the
 
 Distributed control of flexible loads in power grids [See More](https://theses.fr/s306813)
 -
-This thesis consists in providing new flexibility resources which are particularly crucial to integrate renewable energies into the power grid. The procedure relies on new smart technologies allowing for automatic control of devices. The objective is to control a great amount of devices to provide services to the system (load shaping or ancillary services) while: - maintaining the quality of service for the users; - minimizing communications between controllable devices and the central controller. The approach combines the techniques from the theory of controlled Markov processes, mean-field theory, and automatic control.
+This thesis consists in providing new flexibility resources which are particularly crucial to integrate renewable energies into the power grid. The procedure relies on new smart technologies allowing for automatic control of devices. The objective is to control a great amount of devices to provide services to the system (load shaping or ancillary services) while: - maintaining the quality of service for the users; - minimizing communications between controllable devices and the central controller. The approach combines the techniques from the theory of controlled Markov processes, mean-field theory, and optimal transport.
 
 News
 -
