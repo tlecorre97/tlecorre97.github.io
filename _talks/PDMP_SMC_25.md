@@ -1,10 +1,10 @@
 ---
-title: "Online Moment Constrained Optimal Transport applied to Electric Vehicle Charging"
+title: "Mean-Field Control of Heterogeneous Piecewise Deterministic Markov Processes under Grid Constraints"
 collection: talks
 type: "Talk"
-permalink: /talks/PGMO2024
-venue: "PGMO"
-date: 2024-11-20
+permalink: /talks/SMC25
+venue: "2025 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm)"
+date: 2025-09-30
 location: "EDF Lab, Palaiseau, France"
-slidesurl: /files/Presentation_PGMO2024.pdf
+slidesurl: /files/Presentation_PDMP_SMC_25.pdf
 ---
