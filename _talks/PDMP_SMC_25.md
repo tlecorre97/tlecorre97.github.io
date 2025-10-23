@@ -1,0 +1,10 @@
+---
+title: "Online Moment Constrained Optimal Transport applied to Electric Vehicle Charging"
+collection: talks
+type: "Talk"
+permalink: /talks/PGMO2024
+venue: "PGMO"
+date: 2024-11-20
+location: "EDF Lab, Palaiseau, France"
+slidesurl: /files/Presentation_PGMO2024.pdf
+---
