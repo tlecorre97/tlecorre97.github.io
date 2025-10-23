@@ -16,3 +16,5 @@ This thesis consists in providing new flexibility resources which are particular
 News
 -
 I'm starting an ATER position at ENS Lyon, in September 2025
+
+I'm defending my thesis on October 29th at Inria Paris!
