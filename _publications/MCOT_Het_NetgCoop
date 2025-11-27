@@ -1,0 +1,13 @@
+---
+title: "Moment Constrained Optimal Transport for Energy Demand Management of Heterogeneous Loads"
+category: conference
+authors:
+  - Julien Cardinal
+  - Thomas Le Corre
+  - Ana Bušić
+date: 2025-10-08
+venue: "2025 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm)"
+paperurl: "https://link.springer.com/chapter/10.1007/978-3-032-09315-8_12"
+excerpt: >
+  This paper investigates mean-field control problems for large populations of agents modeled by piecewise deterministic Markov processes. Motivated by the growing need for demand-side management in power systems, we develop a decentralized control framework that accounts for key operational grid constraints such as maximum aggregate power and ramping limits. These constraints are critical to ensure the feasibility and reliability of control strategies in real-world power grids. Furthermore, we address the limitation of classical mean-field approaches that assume agent homogeneity by extending the formulation to heterogeneous populations, where agent-specific characteristics (such as charging power or battery capacity) are encoded through fixed parameters. The resulting framework enables the scalable and feasible coordination of various flexible loads. Theoretical developments are illustrated through applications to electric vehicle charging, demonstrating the impact of the proposed constraints and heterogeneity modeling on the system’s aggregate behavior.
+---
