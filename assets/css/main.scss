@@ -41,3 +41,36 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* Resserre fortement les blocs de chaque publication */
+.archive__item {
+  margin-bottom: 0.6rem;   /* espace entre deux publications */
+}
+
+/* Titre */
+.archive__item-title {
+  margin-top: 0;
+  margin-bottom: 0.1rem;  /* très proche du texte suivant */
+  line-height: 1.25;
+}
+
+/* Ligne "Published in ..." */
+.archive__item > p:first-of-type {
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+  line-height: 1.25;
+}
+
+/* Résumé */
+.archive__item-excerpt {
+  margin-top: 0.1rem;
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+/* Bouton / lien "Download Paper" */
+.archive__item a {
+  margin-top: 0;
+  padding-top: 0;
+}
+
