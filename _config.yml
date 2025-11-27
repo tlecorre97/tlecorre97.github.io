@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Thomas Le Corre"
 title_separator          : "-"
 name                     : &name "Thomas LE CORRE"
-description              : &description "I'm currently finishing my PhD at Inria Paris and DI ENS Paris. I will start an ATER position at ENS Lyon in September 2025"
+description              : &description "I just finished my PhD at Inria Paris and DI ENS Paris. I have been an ATER at ENS Lyon since September 2025."
 url                      : https://tlecorre97.github.io # the base hostname & protocol for your site e.g. "https://tlecorre97.github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "tlecorre97/tlecorre97.github.io"
@@ -27,7 +27,7 @@ author:
   pronouns         : "he/his"  
   bio              : "PhD Student"
   location         : "Paris, France"
-  employer         : "Inria Paris / DI ENS Paris / ENS Lyon"
+  employer         : "ENS Lyon"
   uri              : # URL
   email            : "thomasDOTle-correATinriaDOTfr" 
 
