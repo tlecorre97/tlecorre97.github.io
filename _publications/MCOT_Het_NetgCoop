@@ -6,7 +6,7 @@ authors:
   - Thomas Le Corre
   - Ana Bušić
 date: 2025-10-08
-venue: "2025 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm)"
+venue: "12th International Conference of Networks, Games, Control and Optimization (NETGCOOP)"
 paperurl: "https://link.springer.com/chapter/10.1007/978-3-032-09315-8_12"
 excerpt: >
   This paper addresses the problem of coordinating a large population of heterogeneous electrical loads, such as electric vehicles (EVs) and water heaters (WHs), under global operational constraints. We extend the Moment Constrained Optimal Transport for Control (MCOT-C) framework to accommodate multiple classes of agents with distinct dynamics and cost structures. Our formulation relies on a mean-field limit that captures agent heterogeneity through class-specific distributions. We propose a scalable gradient descent algorithm and 
