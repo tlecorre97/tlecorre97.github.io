@@ -14,7 +14,7 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork"
-           style="margin-bottom:1rem; padding:0;"> <!-- marge entre articles -->
+           style="margin-bottom:1rem; padding:0;"> <!-- espace entre articles -->
 
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser" style="margin-bottom:0.1rem;">
@@ -34,7 +34,9 @@
     </h3>
     
     {% if post.read_time %}
-      <p class="page__meta" style="margin:0 0 0.1rem 0; line-height:1.2;"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+      <p class="page__meta" style="margin:0 0 0.1rem 0; line-height:1.2;">
+        <i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}
+      </p>
     {% endif %}
 
     {% if post.collection == 'teaching' %}
@@ -53,43 +55,31 @@
          style="margin:0 0 0.1rem 0; line-height:1.2;">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description"
-         style="margin:0 0 0.1rem 0; line-height:1.2;"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+         style="margin:0 0 0.1rem 0; line-height:1.2;">
+        <p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
+      </p>
     {% endif %}
 
     {% if post.citation %}
       <p style="margin:0 0 0.1rem 0; line-height:1.2;">Recommended citation: {{ post.citation }}</p>
     {% endif %}
 
-    {% if post.paperurl %}
-      <p style="margin:0; line-height:1.2; display:inline;"><a href="{{ post.paperurl }}">Download Paper</a></p>
-    {% endif %}
-
-    {% if post.slidesurl %}
-      <p style="margin:0; line-height:1.2; display:inline;"> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% endif %}
-
-    {% if post.bibtexurl %}
-      <p style="margin:0; line-height:1.2; display:inline;"> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+    {% assign has_links = post.paperurl or post.slidesurl or post.bibtexurl %}
+    {% if has_links %}
+      <p style="margin:0; line-height:1.2;">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}">Download Paper</a>
+        {% endif %}
+        {% if post.slidesurl %}
+          {% if post.paperurl %} | {% endif %}
+          <a href="{{ post.slidesurl }}">Download Slides</a>
+        {% endif %}
+        {% if post.bibtexurl %}
+          {% if post.paperurl or post.slidesurl %} | {% endif %}
+          <a href="{{ post.bibtexurl }}">Download Bibtex</a>
+        {% endif %}
+      </p>
     {% endif %}
 
   </article>
 </div>
-
-
-{% assign has_links = post.paperurl or post.slidesurl or post.bibtexurl %}
-{% if has_links %}
-  <p style="margin:0; line-height:1.2;">
-    {% if post.paperurl %}
-      <a href="{{ post.paperurl }}">Download Paper</a>
-    {% endif %}
-    {% if post.slidesurl %}
-      {% if post.paperurl %} | {% endif %}
-      <a href="{{ post.slidesurl }}">Download Slides</a>
-    {% endif %}
-    {% if post.bibtexurl %}
-      {% if post.paperurl or post.slidesurl %} | {% endif %}
-      <a href="{{ post.bibtexurl }}">Download Bibtex</a>
-    {% endif %}
-  </p>
-{% endif %}
-
