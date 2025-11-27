@@ -1,0 +1,17 @@
+
+---
+title: "Mean Field Control of Thermostatically Controlled Loads as Piecewise Deterministic Markov Processes"
+category: preprint
+authors:
+  - Thomas Le Corre
+  - Adrien Séguret
+  - Ana Bušić
+date: 2025-11-03
+venue: "arXiv:2511.01500v1"
+paperurl: "https://arxiv.org/abs/2511.01500"
+excerpt: >
+  This paper presents a mean-field control approach for Piecewise Deterministic Markov Processes (PDMPs), specifically designed for controlling a large number of agents. By modeling the interactions of a large number of agents through an aggregate cost function, the proposed method mitigates the high dimensionality of the problem by focusing on a representative agent. The contribution of this work is the application of a PDMP-based mean-field control framework to the coordination of a large population of Thermostatically Controlled Loads (TCLs). Adapting this framework to TCLs requires incorporating a quality-of-service constraint ensuring that each agent's temperature remains within a specified comfort range. To achieve this, an additional jump intensity is introduced so that agents are very likely to switch between heating and cooling modes when they reach the boundaries of their temperature range. This extension to TCLs is demonstrated through Water Heaters (WHs) control, with a decentralized algorithm based on a dual formulation and stochastic gradient descent. The numerical results obtained illustrate this approach on two examples (signal tracking and taking into account energy price).
+---
+
+
+The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
