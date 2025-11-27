@@ -17,5 +17,47 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+<!-- Styles spécifiques pour resserrer les publications -->
+<style>
+  /* titre des publications */
+  h3.archive__item-title,
+  .archive__item-title,
+  .archive__item-title a {
+    margin-top: 0 !important;
+    margin-bottom: 0.06rem !important;
+    line-height: 1.12 !important;
+    font-weight: 700 !important;
+  }
+
+  /* ligne "Published in ..." */
+  .archive__item > p:first-of-type,
+  .archive__item > p.page__meta,
+  .archive__item > p.page__date {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.12 !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* résumé / extrait */
+  .archive__item-excerpt {
+    margin: 0.06rem 0 0.10rem 0 !important;
+    line-height: 11.22 !important;
+    font-size: 0.98rem !important;
+  }
+
+  /* liens "Download Paper" */
+  .archive__item a {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* réduire l'espacement entre deux publications */
+  .archive__item {
+    margin-bottom: 0.42rem !important;
+  }
+</style>
 
 <meta http-equiv="cleartype" content="on">
