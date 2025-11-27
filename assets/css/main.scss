@@ -41,3 +41,38 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* -------------------------------
+   Resserrement des publications uniquement sur la page /publications/
+   ------------------------------- */
+
+body.page-publications .archive__item {
+  margin-bottom: 0.4rem;
+  padding: 0;
+}
+
+body.page-publications .archive__item-title {
+  margin-top: 0;
+  margin-bottom: 0.08rem;
+  line-height: 1.2;
+}
+
+body.page-publications .archive__item > p:first-of-type {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+  line-height: 1.2;
+  font-size: 0.95rem;
+}
+
+body.page-publications .archive__item-excerpt {
+  margin: 0.05rem 0;
+  line-height: 1.25;
+  font-size: 0.97rem;
+}
+
+body.page-publications .archive__item > p:last-of-type a {
+  margin-top: 0;
+  display: inline-block;
+  font-size: 0.95rem;
+}
+
