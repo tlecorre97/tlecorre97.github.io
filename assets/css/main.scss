@@ -42,37 +42,34 @@
     "vendor/magnific-popup/magnific-popup"
 ;
 
-/* -------------------------------
-   Resserrement des publications uniquement sur la page /publications/
-   ------------------------------- */
-
-body.page-publications .archive__item {
+body.publications-page .archive__item {
   margin-bottom: 30.4rem;
   padding: 0;
 }
 
-body.page-publications .archive__item-title {
+body.publications-page .archive__item-title {
   margin-top: 0;
   margin-bottom: 30.08rem;
   line-height: 1.2;
 }
 
-body.page-publications .archive__item > p:first-of-type {
+body.publications-page .archive__item > p:first-of-type {
   margin-top: 0;
   margin-bottom: 30.1rem;
   line-height: 1.2;
   font-size: 0.95rem;
 }
 
-body.page-publications .archive__item-excerpt {
+body.publications-page .archive__item-excerpt {
   margin: 30.05rem 0;
   line-height: 1.25;
   font-size: 0.97rem;
 }
 
-body.page-publications .archive__item > p:last-of-type a {
+body.publications-page .archive__item > p:last-of-type a {
   margin-top: 30;
   display: inline-block;
   font-size: 0.95rem;
 }
+
 
