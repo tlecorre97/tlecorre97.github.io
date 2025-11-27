@@ -41,36 +41,47 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+/* ----------------------------
+   Resserrement des publications
+   Placer tout en bas de main.scss
+   ---------------------------- */
 
-/* Resserre fortement les blocs de chaque publication */
-.archive__item {
-  margin-bottom: 0.6rem;   /* espace entre deux publications */
+/* cible le h3 si tu as remplacé h2 par h3 */
+h3.archive__item-title,
+.archive__item-title,
+.archive__item-title a {
+  margin-top: 0 !important;
+  margin-bottom: 0.08rem !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
 }
 
-/* Titre */
-.archive__item-title {
-  margin-top: 0;
-  margin-bottom: 0.1rem;  /* très proche du texte suivant */
-  line-height: 1.25;
+/* première ligne (venue / Published in ...) */
+.archive__item > p:first-of-type,
+.archive__item > p.page__meta,
+.archive__item > p.page__date {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.15 !important;
+  font-size: 0.95rem !important;
 }
 
-/* Ligne "Published in ..." */
-.archive__item > p:first-of-type {
-  margin-top: 0;
-  margin-bottom: 0.15rem;
-  line-height: 1.25;
-}
-
-/* Résumé */
+/* extrait / résumé */
 .archive__item-excerpt {
-  margin-top: 0.1rem;
-  margin-bottom: 0.2rem;
-  line-height: 1.3;
+  margin: 0.08rem 0 0.12rem 0 !important;
+  line-height: 1.25 !important;
+  font-size: 0.98rem !important;
 }
 
-/* Bouton / lien "Download Paper" */
+/* liens (Download Paper...) */
 .archive__item a {
-  margin-top: 0;
-  padding-top: 0;
+  display: inline-block;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0.95rem !important;
 }
 
+/* réduire l'espace entre deux publications */
+.archive__item {
+  margin-bottom: 0.45rem !important;
+}
