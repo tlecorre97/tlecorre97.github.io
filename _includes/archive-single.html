@@ -50,35 +50,22 @@
       </p>
     {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-      <p class="archive__item-excerpt" itemprop="description"
-         style="margin:0 0 0.1rem 0; line-height:1.2;">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
+    {% if post.excerpt %}
       <p class="archive__item-excerpt" itemprop="description"
          style="margin:0 0 0.1rem 0; line-height:1.2;">
-        <p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p>
+        {{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}
+
+        {% assign has_links = post.paperurl or post.slidesurl or post.bibtexurl %}
+        {% if has_links %}
+          {% if post.paperurl %} <a href="{{ post.paperurl }}">Download Paper</a>{% endif %}
+          {% if post.slidesurl %}{% if post.paperurl %} | {% endif %}<a href="{{ post.slidesurl }}">Download Slides</a>{% endif %}
+          {% if post.bibtexurl %}{% if post.paperurl or post.slidesurl %} | {% endif %}<a href="{{ post.bibtexurl }}">Download Bibtex</a>{% endif %}
+        {% endif %}
       </p>
     {% endif %}
 
     {% if post.citation %}
       <p style="margin:0 0 0.1rem 0; line-height:1.2;">Recommended citation: {{ post.citation }}</p>
-    {% endif %}
-
-    {% assign has_links = post.paperurl or post.slidesurl or post.bibtexurl %}
-    {% if has_links %}
-      <p style="margin:0; line-height:1.2;">
-        {% if post.paperurl %}
-          <a href="{{ post.paperurl }}">Download Paper</a>
-        {% endif %}
-        {% if post.slidesurl %}
-          {% if post.paperurl %} | {% endif %}
-          <a href="{{ post.slidesurl }}">Download Slides</a>
-        {% endif %}
-        {% if post.bibtexurl %}
-          {% if post.paperurl or post.slidesurl %} | {% endif %}
-          <a href="{{ post.bibtexurl }}">Download Bibtex</a>
-        {% endif %}
-      </p>
     {% endif %}
 
   </article>
