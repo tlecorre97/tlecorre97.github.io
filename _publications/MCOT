@@ -1,13 +1,13 @@
 ---
 title: "Moment Constrained Optimal Transport for Control Applications"
-category: preprint
+category: article
 authors:
   - Thomas Le Corre
   - Ana Bušić
   - Sean Meyn
-date: 2025-06-20
-venue: "arXiv preprint arXiv:2208.01958v2"
-paperurl: "https://arxiv.org/abs/2208.01958v2"
+date: 2026-02-06
+venue: "TMLR"
+paperurl: "https://openreview.net/pdf?id=2hAtSpnat9"
 excerpt: >
   This paper introduces a one-sided relaxation of optimal transport for distributed control, where the second marginal is constrained to a moment class. The approach, motivated by mean field control problems, includes entropic regularization and enables decentralized coordination without specifying a target distribution. Applications include electric vehicle charging under grid constraints, validated on a large real-world dataset.
 ---
