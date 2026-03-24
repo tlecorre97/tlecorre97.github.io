@@ -12,6 +12,7 @@ Hello! Welcome to my website! I am, during this academic year, an ATER at ENS Ly
 **Distributed control of flexible loads in power grids**
 
 This thesis consists in providing new flexibility resources which are particularly crucial to integrate renewable energies into the power grid. The procedure relies on new smart technologies allowing for automatic control of devices. The objective is to control a great amount of devices to provide services to the system (load shaping or ancillary services) while: - maintaining the quality of service for the users; - minimizing communications between controllable devices and the central controller. The approach combines the techniques from the theory of controlled Markov processes, mean-field theory, and optimal transport.
+The manuscript is available here: (HAL)[https://theses.hal.science/tel-05544318]
 
 News
 -
