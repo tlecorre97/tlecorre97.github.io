@@ -6,7 +6,7 @@ authors:
   - Adrien Séguret
   - Ana Bušić
 date: 2025-11-03
-venue: "Accepted at ECC 2026"
+venue: "ECC 2026 (Accepted)"
 paperurl: "https://arxiv.org/abs/2511.01500"
 excerpt: >
   This paper presents a mean-field control approach for Piecewise Deterministic Markov Processes (PDMPs), specifically designed for controlling a large number of agents. By modeling the interactions of a large number of agents through an aggregate cost function, the proposed method mitigates the high dimensionality of the problem by focusing on a representative agent. The contribution of this work is the application of a PDMP-based mean-field control framework to the coordination of a large population of Thermostatically Controlled Loads (TCLs). Adapting this framework to TCLs requires incorporating a quality-of-service constraint ensuring that each agent's temperature remains within a specified comfort range. To achieve this, an additional jump intensity is introduced so that agents are very likely to switch between heating and cooling modes when they reach the boundaries of their temperature range. This extension to TCLs is demonstrated through Water Heaters (WHs) control, with a decentralized algorithm based on a dual formulation and stochastic gradient descent. The numerical results obtained illustrate this approach on two examples (signal tracking and taking into account energy price).
